@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-center">
+    <div class="card" style="width:500px">
+      <div class="card-header">
+        <h2>Restaurants</h2>
+      </div>
+      <ul class="list-group list-group-flush">
+        <% @restaurants.each do |restaurant| %>
+          <li class="list-group-item"><%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none text-dark" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
