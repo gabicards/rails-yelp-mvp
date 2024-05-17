@@ -13,6 +13,8 @@
             <li class="list-group-item"><%= review.content %></li>
           <% end %>
         </ul>
+        <%= link_to "Home", restaurants_path, class: "btn btn-primary mt-3" %>
+        <%= link_to "Add a review", new_restaurant_review_path(@restaurant), class: 'btn btn-primary mt-3'  %>
         <br>
         </div>
       </div>
